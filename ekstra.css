@@ -1,0 +1,151 @@
+.footer {
+  width: 100%;
+  padding: 20px 0 30px 0;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.footer_container {
+  margin: 22px 0 0 0;
+}
+
+.footer_container ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer_container ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  font-size: 11px;
+  text-align: left;
+  vertical-align: top;
+  padding: 0;
+  width: 270px;
+}
+
+.footer_container ul li ul {
+  width: 120px;
+  float: left;
+}
+.footer_container ul li ul li {
+  display: block;
+  width: auto;
+}
+
+.footer_container ul.right {
+  float: right;
+}
+
+/* -------------------------------------------grid css----------------------------------------------- */
+
+@media (min-width: 780px) {
+  #second_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  #fourth_section .col_wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #fourth_section .element_3 {
+    order: 4;
+  }
+
+  #fifth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  #fifth_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #sixth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  #sixth_section img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .image1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .image4 {
+    grid-column: span 2;
+  }
+
+  .image6 {
+    grid-column: span 3;
+  }
+}
+
+/* ------------------------------------------------home page----------------------------------------------- */
+main {
+  display: grid;
+  grid-template-columns: repeat (6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#first_section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/splashbillede2.png);
+  grid-column: 2 / 7;
+  grid-row: 1/ 4;
+  background-position: 87% 10%;
+}
+
+.section_wrapper {
+  place-content: center;
+  width: auto;
+  height: auto;
+  background: #8c6031ca;
+  color: #fff;
+  grid-column: 3 / 9;
+  grid-row: 8 / 3;
+}
+
+/* width: 100%;
+  height: 100vh; 
+  background-image: url(img/splashbillede2.png); 
+  grid-column: 2 / 7;
+  grid-row: 1/ 4;
+  background-position: 87% 10%; */
